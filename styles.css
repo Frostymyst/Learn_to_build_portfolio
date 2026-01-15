@@ -1,0 +1,135 @@
+.element1{
+    height: 250px;
+    width: 200px;
+    background-color: blanchedalmond;
+    border-radius: 5%;
+    opacity: 0.5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+
+    color: black;
+    
+    position: absolute;
+    transform: rotate(-7deg) translate(var(--x), var(--y));
+
+    transition: transform 0.5s ease-out; 
+}
+
+.element1:hover {
+    transform: rotate(-10deg) translate(calc(var(--x) - 5px),calc(var(--y) - 5px));
+    background-color:bisque;
+    opacity: 1.0;
+}
+
+
+
+.element2{
+    height: 225px;
+    width: 175px;
+    background-color: blanchedalmond;
+    border-radius: 5%;
+    opacity: 0.5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+
+    color: black;
+    
+    position: absolute;
+    transform: rotate(7deg) translate(var(--x), var(--y));
+
+    transition: transform 0.5s ease-out; 
+}
+
+.element2:hover {
+    transform: rotate(10deg) translate(calc(var(--x) + 5px),calc(var(--y) - 20px));
+    background-color:bisque;
+    opacity: 1.0;
+}
+
+
+
+.element3{
+    height: 225px;
+    width: 175px;
+    background-color: blanchedalmond;
+    border-radius: 5%;
+    opacity: 0.5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+
+    color: black;
+    
+    position: absolute;
+    transform: rotate(-20deg) translate(var(--x), var(--y));
+
+    transition: transform 0.5s ease-out; 
+}
+
+.element3:hover {
+    transform: rotate(-22deg) translate(calc(var(--x) + 5px),calc(var(--y) - 4px));
+    background-color:bisque;
+    opacity: 1.0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(12 7.9% 35.3%);
+    padding: 70px 30px;
+    font-family: "Tangerine";
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header-middle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Tangerine", cursive;
+    font-style: italic;
+}
+
+
+@media screen and (max-width: 400px) {
+    .header {
+        flex-direction: column;
+        position: static;
+    }
+
+    .header-middle {
+        position: static;
+        transform: none;
+    }
+}
