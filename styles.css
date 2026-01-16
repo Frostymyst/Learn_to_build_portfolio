@@ -4,6 +4,7 @@
     background-color: hsl(12 7.9% 35.3%);
     border-radius: 5%;
     opacity: 0.5;
+    margin-bottom: 25px;
 
     display: flex;
     align-items: center;
@@ -30,6 +31,12 @@
     opacity: 1.0;
 }
 
+.element1 img {
+    width:"100%";
+    height:"100%";
+    object-fit:scale-down;
+}
+
 
 
 .element2{
@@ -38,6 +45,7 @@
     background-color: hsl(12 7.9% 35.3%);
     border-radius: 5%;
     opacity: 0.5;
+    margin-bottom: 25px;
 
     display: flex;
     align-items: center;
@@ -62,6 +70,12 @@
     transform: translate(5px, -20px) rotate(10deg);
     background-color:hsl(12 7.9% 35.3%);
     opacity: 1.0;
+}
+
+.element2 img {
+    width:"100%";
+    height:"100%";
+    object-fit:scale-down;
 }
 
 
