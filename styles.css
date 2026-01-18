@@ -1,3 +1,27 @@
+.cards {
+    position: relative;
+    width: 80%;  
+    margin: 0 auto;  
+    transform: scale(1.5);  
+}
+
+/* For responsive scaling based on window size */
+@media screen and (max-width: 1200px) {
+    .cards {
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .cards {
+        transform: scale(0.6);
+    }
+}
+
+
+
+
+
 .element1{
     height: 250px;
     width: 200px;
@@ -86,6 +110,7 @@
     background-color: hsl(12 7.9% 35.3%);
     border-radius: 5%;
     opacity: 0.5;
+    margin-bottom: 25px;
 
     display: flex;
     align-items: center;
@@ -112,12 +137,19 @@
     opacity: 1.0;
 }
 
+.element3 img {
+    width:"100%";
+    height:"100%";
+    object-fit:fill;
+}
+
 .element4{
     height: 225px;
     width: 175px;
     background-color: hsl(12 7.9% 35.3%);
     border-radius: 5%;
     opacity: 0.5;
+    margin-bottom: 25px;
 
     display: flex;
     align-items: center;
@@ -131,7 +163,7 @@
     position: absolute;
     transform-origin: left top;
     left: var(--x);
-    top: var(--y);
+    top: var(--y);   
     transform: rotate(0deg);
 
     transition: transform 0.5s ease-out; 
@@ -144,6 +176,11 @@
     opacity: 1.0;
 }
 
+.element4 img {
+    width:"100%";
+    height:"100%";
+    object-fit:fill;
+}
 
 .element5{
     height: 175px;
@@ -189,6 +226,32 @@
 
 
 
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.televisions {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px; 
+    padding: 0 20px; 
+}
+
+.televisions img {
+    width: 100%;
+    height: auto;
+    max-width: 3000px; 
+    object-fit: contain;
+    margin-left: -10px;
+    margin-bottom: -4000px;
+}
 
 
 
@@ -235,23 +298,51 @@
 
 
 
-.aboutme {
-    display: flex;
-    align-items: center;
-    width: 900px;
-    height: 500px;
+.hero {
+    position: relative;
+    width: 80%;  
+    margin: 50px auto 25px auto; 
     border: 20px solid hsl(12 7.9% 35.3%); 
-    margin: 50px auto 25px auto;
     background-color: hsl(12 7.9% 20%); 
     padding: 20px;
-    gap: 20px; 
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.aboutme img {
-    max-width: 300px; 
-    max-height: 600px;
-    height: auto;
-    margin-left: auto;
+.hero p {
+    color: white;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 1200px) {
+    .hero {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .hero {
+        width: 95%;
+        height: auto;
+    }
+}
+
+
+
+.aboutme {
+    position: relative;
+    width: 80%;  
+    margin: 50px auto 25px auto; 
+    border: 20px solid hsl(12 7.9% 35.3%); 
+    background-color: hsl(12 7.9% 20%); 
+    padding: 20px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .aboutme p {
@@ -260,10 +351,15 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1200px) {
     .aboutme {
         width: 90%;
-        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .aboutme {
+        width: 95%;
         height: auto;
     }
 }
